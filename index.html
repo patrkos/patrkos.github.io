@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>welcome</title>
     <style>
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes wiggle {
+            0%, 100% {
+                transform: rotate(-3deg);
+            }
+            50% {
+                transform: rotate(3deg);
+            }
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -15,15 +36,21 @@
             height: 100vh;
             background-color: #373737;
         }
+
         .container {
             text-align: center;
         }
+
         h1 {
             color: #ffffff;
+            animation: bounce 2s infinite;
         }
+
         h2 {
-            color: #959595;
+            color: #d1d1d1;
+            animation: wiggle 0.5s infinite;
         }
+
         p {
             color: #666;
         }
@@ -31,6 +58,7 @@
 </head>
 <body>
     <div class="container">
+        <h1></h1>
         <h2>welcome to the end of the internet</h2>
         <p></p>
     </div>
