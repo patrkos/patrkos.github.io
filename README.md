@@ -1,1 +1,0 @@
-# patrkos.github.io
